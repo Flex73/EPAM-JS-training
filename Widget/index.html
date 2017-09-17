@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8" />
-    <meta keyword="Weather in New Jersey" />
-    <link rel="stylesheet" href="content/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <title>Today's weather in New Jersey</title>
-</head>
+    <head>
+        <meta charset="utf-8" />
+        <meta keyword="Weather in New Jersey" />
+        <link rel="stylesheet" href="content/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <title>Today's weather in New Jersey</title>
+    </head>
 
-<body>
-    <image class="temp-back" src="content/background.jpg">
+    <body>
+        <img class="temp-back" src="content/background.jpg" alt="Today's weather now">
         <div class="weather">
             <div class="weather-item">
                 <div class="weather-item-update-info">
@@ -21,30 +21,38 @@
                     <div class="weather-item-img-now"></div>
                 </div>
             </div>
-            <div class="weather-info">
-                <div class="weather-info-degree">79°</div>
-                <div class="weather-info-city">
+            <header class="weather-info">
+                <span class="weather-info-degree">79°</span>
+                <p class="weather-info-city">
                     <span class="weather-info-city-now">Cloudy Skies</span>
                     <span class="weather-info-city-place">Sicklerville, New Jersey</span>
-                </div>
-                <div class="weather-info-date">MAY 21</div>
-            </div>
+                </p>
+                <p class="weather-info-date">MAY 21</p>
+            </header>
             <div class="weather-descr">
-                <div class="weather-descr-wind">
-                    <div class="weather-descr-wind-item"></div>
-                    <div class="weather-descr-wind-info">2 MPH</div>
-                </div>
-                <div class="weather-descr-humidity">
-                    <div class="weather-descr-humidity-item"></div>
-                    <div class="weather-descr-humidity-info">33%</div>
-                </div>
-                <div class="weather-descr-sun">
-                    <div class="weather-descr-sun-item"></div>
-                    <div class="weather-descr-sun-info">83%</div>
-                </div>
+                <span class="weather-descr-wind">
+                    <div class="weather-descr-wind-item">
+                        <img src="content/wind.jpg" alt="wind">
+                    </div>
+                    <span class="weather-descr-wind-info">2 MPH</span>
+                </span>
+                <span class="weather-descr-humidity">
+                    <div class="weather-descr-humidity-item">
+                        <img src="content/drop.jpg" alt="drop">
+                    </div>
+                    <span class="weather-descr-humidity-info">33%</span>
+                </span>
+                <span class="weather-descr-sun">
+                    <div class="weather-descr-sun-item">
+                        <img src="content/sun.jpg" alt="sun">
+                    </div>
+                    <span class="weather-descr-sun-info">83%</span>
+                </span>
             </div>
-            <div class="weather-toggle"></div>
+            <div class="weather-toggle">
+                <img src="content/toggler.jpg" alt="toggle">
+            </div>
         </div>
-</body>
+    </body>
 
 </html>
