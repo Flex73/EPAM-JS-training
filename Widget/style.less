@@ -1,0 +1,161 @@
+   .temp-back {
+    opacity: 0.2;
+    width: 100%;
+    position: absolute;
+}
+.weather {
+    background-image: url('content/widget.jpg');
+    background-repeat: no-repeat;
+    z-index: 2;
+    width: 380px;
+    height: 458px;
+    position: absolute;
+    top: 15%;
+    left: 35%;
+
+    .weather-item-update-info {
+        position: absolute;
+        left: 350px;
+        top: 9px;
+        font-size: 23px;
+    }
+
+    .weather-item-img {
+        background-image: url('content/item-background.jpg');
+        background-repeat: no-repeat;
+        z-index: 3;
+        width: 380px;
+        height: 275px;
+        
+        .weather-item-img-now {
+            background-image: url('content/clouds.jpg');
+            background-repeat: no-repeat;
+            width: 160px;
+            height: 150px;
+            z-index: 4;
+            margin-top: 50px;
+            margin-left: 120px;
+        }
+    }
+
+    .weather-info {
+        z-index: 5;
+        margin-top: -89px;
+        font-family: 'Montserrat', sans-serif;
+
+        .weather-info-degree {
+            position: absolute;
+            left: 17px;
+            font-size: 55px;
+        }
+
+        .weather-info-city {
+            position: absolute;
+            left: 112px;
+            margin-top: 12px;
+            display: flex;
+            flex-direction: column;
+
+            .weather-info-city-now {
+                font-size: 20px;
+            }
+
+            .weather-info-city-place {
+                margin-top: 4px;
+                font-size: 15px;
+            }
+        }
+
+        .weather-info-date {
+            position: absolute;
+            left: 321px;
+            width: 49px;
+            height: 55px;
+            padding-top: 15px;
+            padding-left: 10px;
+            background-color: orange;
+            text-align: center;
+            color: white;
+        }
+    }
+
+    .weather-descr {
+        margin-top: 88px;
+        background-image: url('content/descrbackground.jpg');
+        width: 380px;
+        height: 133px;
+        color: white;
+
+        .weather-descr-wind {
+            position: absolute;
+            display: flex;
+            top: 365px;
+            left: 40px;
+
+            .weather-descr-wind-item {
+                background-image: url('content/wind.jpg');
+                background-repeat: no-repeat;
+                width: 30px;
+                height: 30px;
+            }
+
+            .weather-descr-wind-info {
+                padding-top: 5px;
+                padding-left: 19px;
+                font-size: 14px;
+                font-weight: bold;
+            }
+        }
+
+        .weather-descr-humidity {
+            position: absolute;
+            display: flex;
+            top: 365px;
+            left: 166px;
+
+            .weather-descr-humidity-item {
+                background-image: url('content/drop.jpg');
+                background-repeat: no-repeat;
+                width: 30px;
+                height: 30px;
+            }
+
+            .weather-descr-humidity-info {
+                padding-left: 4px;
+                padding-top: 5px;
+                font-size: 14px;
+                font-weight: bold;
+            } 
+        }
+
+        .weather-descr-sun {
+            position: absolute;
+            top: 365px;
+            left: 269px;
+            display: flex;
+
+            .weather-descr-sun-item {
+                background-image: url('content/sun.jpg');
+                background-repeat: no-repeat;
+                width: 30px;
+                height: 30px;
+            }
+
+            .weather-descr-sun-info {
+                padding-left: 5px;
+                padding-top: 5px;
+                font-size: 14px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .weather-toggle {
+        background-image: url('content/toggler.jpg');
+        width: 50px;
+        height: 20px;
+        position: absolute;
+        top: 420px;
+        left: 163px;
+    }
+}
