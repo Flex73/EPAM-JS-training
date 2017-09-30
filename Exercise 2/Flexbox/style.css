@@ -1,0 +1,107 @@
+@media screen {
+  max-width: 1920px;
+}
+@media handheld {
+  max-width: 720px;
+  max-height: 1280px;
+}
+.temp-back {
+  opacity: 0.2;
+  width: 100%;
+  position: absolute;
+}
+.weather {
+  background-image: url('content/widget.jpg');
+  background-repeat: no-repeat;
+  z-index: 2;
+  max-width: 380px;
+  height: 458px;
+  position: absolute;
+  top: 15%;
+  left: 35%;
+}
+.weather .weather-item-update-info {
+  position: absolute;
+  left: 350px;
+  top: 9px;
+  font-size: 23px;
+}
+.weather .weather-item-img {
+  background-image: url('content/item-background.jpg');
+  background-repeat: no-repeat;
+  z-index: 3;
+  width: 380px;
+  height: 275px;
+}
+.weather .weather-item-img .weather-item-img-now {
+  background-image: url('content/clouds.jpg');
+  background-repeat: no-repeat;
+  width: 160px;
+  height: 150px;
+  z-index: 4;
+  margin-top: 50px;
+  margin-left: 120px;
+}
+.weather .weather-info {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 60px;
+  z-index: 4;
+  height: 60px;
+}
+.weather .weather-info .weather-info-degree {
+  font-size: 55px;
+  margin-top: 0px;
+  padding-left: 5px;
+}
+.weather .weather-info .weather-info-city {
+  display: flex;
+  flex-direction: column;
+  height: 40px;
+}
+.weather .weather-info .weather-info-date {
+  width: 55px;
+  height: 40px;
+  text-align: center;
+  background-color: orange;
+  color: white;
+}
+.weather .weather-descr {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-right: 44px;
+  margin-top: -16px;
+}
+.weather .weather-descr .weather-descr-block {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+.weather .weather-descr .weather-descr-block-info-wind {
+  padding-left: 14px;
+}
+.weather .weather-descr .weather-descr-block-item-humidity {
+  padding-right: 19px;
+}
+.weather .weather-descr .weather-descr-block-info-humidity {
+  padding-right: 6px;
+  padding-top: 2px;
+}
+.weather .weather-descr .weather-descr-block-item-sun {
+  padding-right: 14px;
+}
+.weather .weather-descr .weather-descr-block-info-sun {
+  padding-top: 2px;
+}
+.weather .weather-toggle {
+  width: 50px;
+  height: 20px;
+  position: absolute;
+  top: 425px;
+  left: 163px;
+}

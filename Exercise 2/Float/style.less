@@ -1,0 +1,133 @@
+@media screen {
+    max-width: 1920px;
+}  
+
+@media handheld {
+    max-width: 720px;
+    max-height: 1280px;
+}
+
+.temp-back {
+    opacity: 0.2;
+    max-width: 100%;
+    position: absolute;
+}
+.weather {
+    background-image: url('content/widget.jpg');
+    background-repeat: no-repeat;
+    z-index: 2;
+    max-width: 380px;
+    height: 458px;
+    position: absolute;
+    top: 15%;
+    left: 35%;
+
+    .weather-item-update-info {
+        position: absolute;
+        left: 350px;
+        top: 9px;
+        font-size: 23px;
+    }
+
+    .weather-item-img {
+        background-image: url('content/item-background.jpg');
+        background-repeat: no-repeat;
+        z-index: 3;
+        width: 380px;
+        height: 275px;
+        
+        .weather-item-img-now {
+            background-image: url('content/clouds.jpg');
+            background-repeat: no-repeat;
+            width: 160px;
+            height: 150px;
+            z-index: 4;
+            margin-top: 50px;
+            margin-left: 120px;
+        }
+    }
+
+    .weather-info {
+        font-family: 'Montserrat', sans-serif;
+        z-index: 5;
+        margin-top: -135px;
+        box-sizing: border-box;
+
+
+        .weather-info-degree {
+            font-size: 55px;
+            float: left;
+            margin-right: 10px;
+            padding-left: 5px;
+        }
+
+        .weather-info-city {
+            width: 200px;
+            height: 50px;
+            margin: 0;
+        }
+
+        .weather-info-date {
+            background-color: orange;
+            color: white;
+            float: right;
+            margin-top: -75px;
+            height: 70px;
+            width: 50px;
+            text-align: center;
+        }
+    }
+
+    .weather-descr {
+        margin-top: 88px;
+        background-image: url('content/descrbackground.jpg');
+        width: 380px;
+        height: 133px;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+
+        .weather-descr-wind {
+            float: left;
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-top: -29px;
+
+            .weather-descr-wind-item {
+                float: left;
+                margin-right: 13.5px;
+            }
+        }
+        .weather-descr-humidity {
+            float: left;
+            margin-left: 160px;
+            margin-right: 10px;
+            margin-top: -27px;
+
+            .weather-descr-humidity-item {
+                float: left;
+                margin-right: 18px;
+            }
+        }
+
+        .weather-descr-sun {
+            float: right;
+            margin-right: 44px;
+            margin-top: -27px;
+
+            .weather-descr-sun-item {
+                float: left;
+                margin-right: 10px;
+            }
+        }
+        
+    }
+
+    .weather-toggle {
+        width: 50px;
+        height: 20px;
+        position: absolute;
+        top: 485px;
+        left: 163px;
+    }
+}
