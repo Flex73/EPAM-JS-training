@@ -6,7 +6,7 @@
         <meta keyword="Weather in New Jersey" />
         <link rel="stylesheet" href="content/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">   
         <title>Today's weather in New Jersey</title>
     </head>
 
@@ -22,37 +22,38 @@
                 </div>
             </div>
             <header class="weather-info">
-                <span class="weather-info-degree">79°</span>
+                <span id="weather-info-degree"></span>
                 <p class="weather-info-city">
-                    <span class="weather-info-city-now">Cloudy Skies</span>
-                    <span class="weather-info-city-place">Sicklerville, New Jersey</span>
+                    <span id="weather-info-city-now"></span>
+                    <span id="weather-info-city-place"></span>
                 </p>
-                <p class="weather-info-date">MAY 21</p>
+                <p id="weather-info-date"></p>
             </header>
             <div class="weather-descr">
                 <span class="weather-descr-wind">
                     <div class="weather-descr-wind-item">
                         <img src="content/wind.jpg" alt="wind">
                     </div>
-                    <span class="weather-descr-wind-info">2 MPH</span>
+                    <span id="weather-descr-wind-info"></span>
                 </span>
                 <span class="weather-descr-humidity">
                     <div class="weather-descr-humidity-item">
                         <img src="content/drop.jpg" alt="drop">
                     </div>
-                    <span class="weather-descr-humidity-info">33%</span>
+                    <span id="weather-descr-humidity-info">33%</span>
                 </span>
                 <span class="weather-descr-sun">
                     <div class="weather-descr-sun-item">
                         <img src="content/sun.jpg" alt="sun">
                     </div>
-                    <span class="weather-descr-sun-info">83%</span>
+                    <span id="weather-descr-sun-info"></span>
                 </span>
             </div>
-            <div class="weather-toggle">
-                <img src="content/toggler.jpg" alt="toggle">
+            <div id="weather-more">
+                <button type="button" id="info">Show more info</button>
             </div>
         </div>
+        <script src="test.js"></script> 
     </body>
 
 </html>
